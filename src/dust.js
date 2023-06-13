@@ -34,7 +34,7 @@ class Dust extends Component {
       let camera = scene.cameras[0];
       // Take delta of mouse movement from last event and create movement vector
       // You may want to factor in some kind of speed factor into this as well
-      const speedFactor = 0.0008;
+      const speedFactor = 0.0005;
       var movementVector = new BABYLON.Vector3(
         0,
         speedFactor * evt.movementY,
