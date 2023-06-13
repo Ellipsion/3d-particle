@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "TitilliumWeb-Light";
+  src: url('../public/TitilliumWeb-Light.ttf');
+}
+
+body {
+  font-family: TitilliumWeb-Light;
+}
+
+#hudHeader1 {
+  z-index: 1;
+  height: 50px;
+  width: 250px;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.profile {
+  font-size: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem;
+}
+
+.project {
+  background-color: rgb(70,0,74);
+  color: rgb(160,167,175);
+  opacity: 75%;
+  height: 20em;
+  border-radius: 3%;
+  padding: 0 0.25em 0 0.25em;
+  text-align: left;
+}
+
+.project-header {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project-body {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.project-web-link-button {
+  border: 0;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 15%;
+  background-color: rgb(100,200,100);
+  color: black;
+  font-weight: bold;
+  margin-right: 1em;
+  min-width: 5em;
+  max-width: 5em;
+  height: 2em;
+}
+
+@media (min-width: 50em) {
+  .project-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+}
+@media (max-width: 50em) {
+  .project-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+}
+/*
+If child is .card then set container type to inline-size/size
+:has(> .card) {
+  container-type: inline-size;
+}
+*/
