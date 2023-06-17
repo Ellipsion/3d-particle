@@ -191,6 +191,8 @@ class Dust extends Component {
     camera.setPosition(new BABYLON.Vector3(-1, 0, 0));
   };
 
+  addLogo = () => {};
+
   //document.body.style.background = "url(" + canvas.toDataURL() + ")";
   render() {
     return (
